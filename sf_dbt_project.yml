@@ -1,1 +1,12 @@
 
+name: 'sf_dbt_repo'
+version: '1.0'
+config-version: 2
+
+profile: 'sf_dbt_repo'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  +materialized: table
